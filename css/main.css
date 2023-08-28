@@ -1,0 +1,114 @@
+:root {
+    --main-duration: .3s;
+}
+html {
+    scroll-padding-top: 3.5rem;
+}
+a{
+    text-decoration: none;
+}
+/* Start Home */
+#home {
+    background: linear-gradient(to right,rgba(214, 46, 51 , 0.6),rgba(214, 46, 51 , 0.6)),url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#home .home-caption h1{
+    font-size: 60px;
+}
+#home .open-link {
+    position: absolute;
+    left: 20px;
+    top: calc(50% + 80px);
+    transform: translateY(-50%);
+    font-size: 30px;
+    transition: var(--main-duration);
+}
+#home .open-link a {
+    color: white;
+}
+/* menu */
+.open-menu {
+    font-size: 25px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    z-index: 99;
+    background-color: black;
+    transition: var(--main-duration);
+}
+.open-menu a {
+    color: white;
+    transition: var(--main-duration);
+}
+.open-menu a:hover {
+    color: rgba(214, 46, 51 , 0.4);
+}
+.open-menu span {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.open-menu .navigate {
+    list-style: none;
+    padding-top: 100px;
+}
+.open-menu .navigate li {
+    padding: 10px;
+}
+
+/* singer section */
+.singer-section .content h3 {
+    background-color: rgba(214, 46, 51 , 0.6);
+    cursor: pointer;
+    color: white;
+    padding-block: 10px;
+    margin-bottom: 0;
+}
+.singer-section .content p {
+    cursor: crosshair;
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 0;
+    display: none;
+}
+/* event section */
+.event {
+    background: linear-gradient(to right,rgba(214, 46, 51 , 0.6),rgba(214, 46, 51 , 0.6)),url(../images/invitation-2508607__340.jpg);
+
+}
+/* contact us section */
+.contact-us .heading p {
+    color: #777;
+}
+.contact-us .social li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: var(--main-duration);
+}
+.contact-us .social li:hover {
+    background-color: #D62E33;
+    color: white;
+    border-color: #D62E33;
+}
+.contact-us .form-control {
+    border-radius: 0;
+}
+.contact-us .btn {
+    --bs-btn-border-radius: 0;
+}
+
+
+
+
+
+
+
+
